@@ -1,14 +1,15 @@
 //
 //  BTProgressView.h
-//  PlanetTV
+//  BTProgressView
 //
-//  Created by Borut Tomažin on 9/11/12.
-//  Copyright (c) 2012 TSmedia, medijske vsebine in storitve, d.o.o. All rights reserved.
+//  Created by Borut Tomažin on 2/21/13.
+//  Copyright (c) 2013 Borut Tomazin. All rights reserved.
 //
 
 @interface BTProgressView : UIProgressView
 
 @property (nonatomic, strong) NSString *bgImage;
 @property (nonatomic, strong) NSString *fillImage;
+@property (nonatomic, strong) UIColor *handleColor;
 
 @end

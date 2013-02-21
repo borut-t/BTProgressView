@@ -19,6 +19,10 @@
 		BFE6CF4316D616FB00FF2CF0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE6CF4216D616FB00FF2CF0 /* ViewController.m */; };
 		BFE6CF4616D616FB00FF2CF0 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFE6CF4416D616FB00FF2CF0 /* ViewController.xib */; };
 		BFE6CF4F16D6172A00FF2CF0 /* BTProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE6CF4E16D6172A00FF2CF0 /* BTProgressView.m */; };
+		BFE6CF5516D61C8700FF2CF0 /* bgimage_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = BFE6CF5116D61C8700FF2CF0 /* bgimage_grey.png */; };
+		BFE6CF5616D61C8700FF2CF0 /* bgimage_grey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFE6CF5216D61C8700FF2CF0 /* bgimage_grey@2x.png */; };
+		BFE6CF5716D61C8700FF2CF0 /* fillimage_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = BFE6CF5316D61C8700FF2CF0 /* fillimage_blue.png */; };
+		BFE6CF5816D61C8700FF2CF0 /* fillimage_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFE6CF5416D61C8700FF2CF0 /* fillimage_blue@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		BFE6CF4516D616FB00FF2CF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		BFE6CF4D16D6172A00FF2CF0 /* BTProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTProgressView.h; sourceTree = "<group>"; };
 		BFE6CF4E16D6172A00FF2CF0 /* BTProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTProgressView.m; sourceTree = "<group>"; };
+		BFE6CF5116D61C8700FF2CF0 /* bgimage_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgimage_grey.png; sourceTree = "<group>"; };
+		BFE6CF5216D61C8700FF2CF0 /* bgimage_grey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgimage_grey@2x.png"; sourceTree = "<group>"; };
+		BFE6CF5316D61C8700FF2CF0 /* fillimage_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fillimage_blue.png; sourceTree = "<group>"; };
+		BFE6CF5416D61C8700FF2CF0 /* fillimage_blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fillimage_blue@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +100,7 @@
 				BFE6CF4116D616FB00FF2CF0 /* ViewController.h */,
 				BFE6CF4216D616FB00FF2CF0 /* ViewController.m */,
 				BFE6CF4416D616FB00FF2CF0 /* ViewController.xib */,
+				BFE6CF5016D61C1900FF2CF0 /* images */,
 				BFE6CF3016D616FA00FF2CF0 /* Supporting Files */,
 			);
 			path = BTProgressViewDemo;
@@ -118,6 +127,17 @@
 				BFE6CF4E16D6172A00FF2CF0 /* BTProgressView.m */,
 			);
 			name = BTProgressView;
+			sourceTree = "<group>";
+		};
+		BFE6CF5016D61C1900FF2CF0 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				BFE6CF5116D61C8700FF2CF0 /* bgimage_grey.png */,
+				BFE6CF5216D61C8700FF2CF0 /* bgimage_grey@2x.png */,
+				BFE6CF5316D61C8700FF2CF0 /* fillimage_blue.png */,
+				BFE6CF5416D61C8700FF2CF0 /* fillimage_blue@2x.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +196,10 @@
 				BFE6CF3E16D616FB00FF2CF0 /* Default@2x.png in Resources */,
 				BFE6CF4016D616FB00FF2CF0 /* Default-568h@2x.png in Resources */,
 				BFE6CF4616D616FB00FF2CF0 /* ViewController.xib in Resources */,
+				BFE6CF5516D61C8700FF2CF0 /* bgimage_grey.png in Resources */,
+				BFE6CF5616D61C8700FF2CF0 /* bgimage_grey@2x.png in Resources */,
+				BFE6CF5716D61C8700FF2CF0 /* fillimage_blue.png in Resources */,
+				BFE6CF5816D61C8700FF2CF0 /* fillimage_blue@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +264,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -264,7 +288,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -277,6 +301,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BTProgressViewDemo/BTProgressViewDemo-Prefix.pch";
 				INFOPLIST_FILE = "BTProgressViewDemo/BTProgressViewDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -288,6 +313,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BTProgressViewDemo/BTProgressViewDemo-Prefix.pch";
 				INFOPLIST_FILE = "BTProgressViewDemo/BTProgressViewDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -312,6 +338,7 @@
 				BFE6CF4B16D616FB00FF2CF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

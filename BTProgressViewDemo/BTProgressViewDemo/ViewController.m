@@ -11,6 +11,9 @@
 
 @interface ViewController ()
 
+@property (nonatomic, strong) IBOutlet UIStepper *stepper;
+@property (nonatomic, strong) IBOutlet BTProgressView *myProgressView;
+
 @end
 
 @implementation ViewController
@@ -20,13 +23,16 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    BTProgressView *playingProgressView = [[BTProgressView alloc] initWithFrame:CGRectMake(10.f, 100.f, self.view.frame.size.width-20.f, 3.f)];
-    playingProgressView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-    playingProgressView.progress = 0.1;
-    playingProgressView.tag = 444;
-    playingProgressView.bgImage = @"tvguide_progressbar_grey.png";
-    playingProgressView.fillImage = @"tvguide_progressbar_blue.png";
-    [self.view addSubview:playingProgressView];
+    self.myProgressView.progress = 0.1f;
+    self.myProgressView.bgImage = @"bgimage_grey.png";
+    self.myProgressView.fillImage = @"fillimage_blue.png";
+    self.myProgressView.handleColor = [UIColor redColor];
+    [self.view addSubview:self.myProgressView];
+}
+
+- (IBAction)repositionProgressView:(UIStepper *)sender
+{
+    self.myProgressView.progress = sender.value;
 }
 
 - (void)didReceiveMemoryWarning
