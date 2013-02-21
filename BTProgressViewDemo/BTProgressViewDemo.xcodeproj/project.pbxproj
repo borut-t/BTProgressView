@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFE6CF2A16D616FA00FF2CF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE6CF2916D616FA00FF2CF0 /* UIKit.framework */; };
+		BFE6CF2C16D616FA00FF2CF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE6CF2B16D616FA00FF2CF0 /* Foundation.framework */; };
+		BFE6CF2E16D616FA00FF2CF0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE6CF2D16D616FA00FF2CF0 /* CoreGraphics.framework */; };
+		BFE6CF3416D616FA00FF2CF0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFE6CF3216D616FA00FF2CF0 /* InfoPlist.strings */; };
+		BFE6CF3616D616FA00FF2CF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE6CF3516D616FA00FF2CF0 /* main.m */; };
+		BFE6CF3A16D616FB00FF2CF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE6CF3916D616FB00FF2CF0 /* AppDelegate.m */; };
+		BFE6CF3C16D616FB00FF2CF0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BFE6CF3B16D616FB00FF2CF0 /* Default.png */; };
+		BFE6CF3E16D616FB00FF2CF0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFE6CF3D16D616FB00FF2CF0 /* Default@2x.png */; };
+		BFE6CF4016D616FB00FF2CF0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFE6CF3F16D616FB00FF2CF0 /* Default-568h@2x.png */; };
+		BFE6CF4316D616FB00FF2CF0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE6CF4216D616FB00FF2CF0 /* ViewController.m */; };
+		BFE6CF4616D616FB00FF2CF0 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFE6CF4416D616FB00FF2CF0 /* ViewController.xib */; };
+		BFE6CF4F16D6172A00FF2CF0 /* BTProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE6CF4E16D6172A00FF2CF0 /* BTProgressView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BFE6CF2616D616FA00FF2CF0 /* BTProgressViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTProgressViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFE6CF2916D616FA00FF2CF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BFE6CF2B16D616FA00FF2CF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BFE6CF2D16D616FA00FF2CF0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BFE6CF3116D616FA00FF2CF0 /* BTProgressViewDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BTProgressViewDemo-Info.plist"; sourceTree = "<group>"; };
+		BFE6CF3316D616FA00FF2CF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BFE6CF3516D616FA00FF2CF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BFE6CF3716D616FA00FF2CF0 /* BTProgressViewDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BTProgressViewDemo-Prefix.pch"; sourceTree = "<group>"; };
+		BFE6CF3816D616FB00FF2CF0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BFE6CF3916D616FB00FF2CF0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BFE6CF3B16D616FB00FF2CF0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		BFE6CF3D16D616FB00FF2CF0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		BFE6CF3F16D616FB00FF2CF0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BFE6CF4116D616FB00FF2CF0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BFE6CF4216D616FB00FF2CF0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BFE6CF4516D616FB00FF2CF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		BFE6CF4D16D6172A00FF2CF0 /* BTProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTProgressView.h; sourceTree = "<group>"; };
+		BFE6CF4E16D6172A00FF2CF0 /* BTProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTProgressView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFE6CF2316D616FA00FF2CF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE6CF2A16D616FA00FF2CF0 /* UIKit.framework in Frameworks */,
+				BFE6CF2C16D616FA00FF2CF0 /* Foundation.framework in Frameworks */,
+				BFE6CF2E16D616FA00FF2CF0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFE6CF1D16D616FA00FF2CF0 = {
+			isa = PBXGroup;
+			children = (
+				BFE6CF4C16D6170000FF2CF0 /* BTProgressView */,
+				BFE6CF2F16D616FA00FF2CF0 /* BTProgressViewDemo */,
+				BFE6CF2816D616FA00FF2CF0 /* Frameworks */,
+				BFE6CF2716D616FA00FF2CF0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFE6CF2716D616FA00FF2CF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFE6CF2616D616FA00FF2CF0 /* BTProgressViewDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFE6CF2816D616FA00FF2CF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFE6CF2916D616FA00FF2CF0 /* UIKit.framework */,
+				BFE6CF2B16D616FA00FF2CF0 /* Foundation.framework */,
+				BFE6CF2D16D616FA00FF2CF0 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFE6CF2F16D616FA00FF2CF0 /* BTProgressViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BFE6CF3816D616FB00FF2CF0 /* AppDelegate.h */,
+				BFE6CF3916D616FB00FF2CF0 /* AppDelegate.m */,
+				BFE6CF4116D616FB00FF2CF0 /* ViewController.h */,
+				BFE6CF4216D616FB00FF2CF0 /* ViewController.m */,
+				BFE6CF4416D616FB00FF2CF0 /* ViewController.xib */,
+				BFE6CF3016D616FA00FF2CF0 /* Supporting Files */,
+			);
+			path = BTProgressViewDemo;
+			sourceTree = "<group>";
+		};
+		BFE6CF3016D616FA00FF2CF0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFE6CF3116D616FA00FF2CF0 /* BTProgressViewDemo-Info.plist */,
+				BFE6CF3216D616FA00FF2CF0 /* InfoPlist.strings */,
+				BFE6CF3516D616FA00FF2CF0 /* main.m */,
+				BFE6CF3716D616FA00FF2CF0 /* BTProgressViewDemo-Prefix.pch */,
+				BFE6CF3B16D616FB00FF2CF0 /* Default.png */,
+				BFE6CF3D16D616FB00FF2CF0 /* Default@2x.png */,
+				BFE6CF3F16D616FB00FF2CF0 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFE6CF4C16D6170000FF2CF0 /* BTProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				BFE6CF4D16D6172A00FF2CF0 /* BTProgressView.h */,
+				BFE6CF4E16D6172A00FF2CF0 /* BTProgressView.m */,
+			);
+			name = BTProgressView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFE6CF2516D616FA00FF2CF0 /* BTProgressViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFE6CF4916D616FB00FF2CF0 /* Build configuration list for PBXNativeTarget "BTProgressViewDemo" */;
+			buildPhases = (
+				BFE6CF2216D616FA00FF2CF0 /* Sources */,
+				BFE6CF2316D616FA00FF2CF0 /* Frameworks */,
+				BFE6CF2416D616FA00FF2CF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BTProgressViewDemo;
+			productName = BTProgressViewDemo;
+			productReference = BFE6CF2616D616FA00FF2CF0 /* BTProgressViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFE6CF1E16D616FA00FF2CF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Borut Tomazin";
+			};
+			buildConfigurationList = BFE6CF2116D616FA00FF2CF0 /* Build configuration list for PBXProject "BTProgressViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BFE6CF1D16D616FA00FF2CF0;
+			productRefGroup = BFE6CF2716D616FA00FF2CF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFE6CF2516D616FA00FF2CF0 /* BTProgressViewDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFE6CF2416D616FA00FF2CF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE6CF3416D616FA00FF2CF0 /* InfoPlist.strings in Resources */,
+				BFE6CF3C16D616FB00FF2CF0 /* Default.png in Resources */,
+				BFE6CF3E16D616FB00FF2CF0 /* Default@2x.png in Resources */,
+				BFE6CF4016D616FB00FF2CF0 /* Default-568h@2x.png in Resources */,
+				BFE6CF4616D616FB00FF2CF0 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFE6CF2216D616FA00FF2CF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE6CF3616D616FA00FF2CF0 /* main.m in Sources */,
+				BFE6CF3A16D616FB00FF2CF0 /* AppDelegate.m in Sources */,
+				BFE6CF4316D616FB00FF2CF0 /* ViewController.m in Sources */,
+				BFE6CF4F16D6172A00FF2CF0 /* BTProgressView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BFE6CF3216D616FA00FF2CF0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFE6CF3316D616FA00FF2CF0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BFE6CF4416D616FB00FF2CF0 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFE6CF4516D616FB00FF2CF0 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFE6CF4716D616FB00FF2CF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BFE6CF4816D616FB00FF2CF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFE6CF4A16D616FB00FF2CF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BTProgressViewDemo/BTProgressViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "BTProgressViewDemo/BTProgressViewDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BFE6CF4B16D616FB00FF2CF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BTProgressViewDemo/BTProgressViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "BTProgressViewDemo/BTProgressViewDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFE6CF2116D616FA00FF2CF0 /* Build configuration list for PBXProject "BTProgressViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFE6CF4716D616FB00FF2CF0 /* Debug */,
+				BFE6CF4816D616FB00FF2CF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFE6CF4916D616FB00FF2CF0 /* Build configuration list for PBXNativeTarget "BTProgressViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFE6CF4A16D616FB00FF2CF0 /* Debug */,
+				BFE6CF4B16D616FB00FF2CF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFE6CF1E16D616FA00FF2CF0 /* Project object */;
+}
