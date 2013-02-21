@@ -21,11 +21,8 @@
     // Draw the background in the current rect
     [background drawInRect:rect];
     
-    // Compute the max width in pixels for the fill
-    NSInteger maxWidth = rect.size.width;
-    
     // Compute the width for the current progress value
-    NSInteger curWidth = floor([self progress] * maxWidth);
+    NSInteger curWidth = floor([self progress] * rect.size.width);
     
     // Draw the fill
     [fill drawInRect:CGRectMake(rect.origin.x, rect.origin.y, curWidth, rect.size.height)];
