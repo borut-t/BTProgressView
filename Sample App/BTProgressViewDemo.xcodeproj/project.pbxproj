@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BFA616B417D077CB004EF888 /* BTProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA616B317D077CB004EF888 /* BTProgressView.m */; };
 		BFE6CF2A16D616FA00FF2CF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE6CF2916D616FA00FF2CF0 /* UIKit.framework */; };
 		BFE6CF2C16D616FA00FF2CF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE6CF2B16D616FA00FF2CF0 /* Foundation.framework */; };
 		BFE6CF2E16D616FA00FF2CF0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE6CF2D16D616FA00FF2CF0 /* CoreGraphics.framework */; };
@@ -18,7 +19,6 @@
 		BFE6CF4016D616FB00FF2CF0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFE6CF3F16D616FB00FF2CF0 /* Default-568h@2x.png */; };
 		BFE6CF4316D616FB00FF2CF0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE6CF4216D616FB00FF2CF0 /* ViewController.m */; };
 		BFE6CF4616D616FB00FF2CF0 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFE6CF4416D616FB00FF2CF0 /* ViewController.xib */; };
-		BFE6CF4F16D6172A00FF2CF0 /* BTProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE6CF4E16D6172A00FF2CF0 /* BTProgressView.m */; };
 		BFE6CF5516D61C8700FF2CF0 /* bgimage_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = BFE6CF5116D61C8700FF2CF0 /* bgimage_grey.png */; };
 		BFE6CF5616D61C8700FF2CF0 /* bgimage_grey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFE6CF5216D61C8700FF2CF0 /* bgimage_grey@2x.png */; };
 		BFE6CF5716D61C8700FF2CF0 /* fillimage_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = BFE6CF5316D61C8700FF2CF0 /* fillimage_blue.png */; };
@@ -26,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BFA616B217D077CB004EF888 /* BTProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTProgressView.h; sourceTree = "<group>"; };
+		BFA616B317D077CB004EF888 /* BTProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTProgressView.m; sourceTree = "<group>"; };
 		BFE6CF2616D616FA00FF2CF0 /* BTProgressViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTProgressViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE6CF2916D616FA00FF2CF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BFE6CF2B16D616FA00FF2CF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -42,8 +44,6 @@
 		BFE6CF4116D616FB00FF2CF0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BFE6CF4216D616FB00FF2CF0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BFE6CF4516D616FB00FF2CF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		BFE6CF4D16D6172A00FF2CF0 /* BTProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTProgressView.h; sourceTree = "<group>"; };
-		BFE6CF4E16D6172A00FF2CF0 /* BTProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTProgressView.m; sourceTree = "<group>"; };
 		BFE6CF5116D61C8700FF2CF0 /* bgimage_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgimage_grey.png; sourceTree = "<group>"; };
 		BFE6CF5216D61C8700FF2CF0 /* bgimage_grey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgimage_grey@2x.png"; sourceTree = "<group>"; };
 		BFE6CF5316D61C8700FF2CF0 /* fillimage_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fillimage_blue.png; sourceTree = "<group>"; };
@@ -64,10 +64,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BFA616B117D077CB004EF888 /* BTProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				BFA616B217D077CB004EF888 /* BTProgressView.h */,
+				BFA616B317D077CB004EF888 /* BTProgressView.m */,
+			);
+			name = BTProgressView;
+			path = ../../BTProgressView;
+			sourceTree = "<group>";
+		};
 		BFE6CF1D16D616FA00FF2CF0 = {
 			isa = PBXGroup;
 			children = (
-				BFE6CF4C16D6170000FF2CF0 /* BTProgressView */,
 				BFE6CF2F16D616FA00FF2CF0 /* BTProgressViewDemo */,
 				BFE6CF2816D616FA00FF2CF0 /* Frameworks */,
 				BFE6CF2716D616FA00FF2CF0 /* Products */,
@@ -95,6 +104,7 @@
 		BFE6CF2F16D616FA00FF2CF0 /* BTProgressViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BFA616B117D077CB004EF888 /* BTProgressView */,
 				BFE6CF3816D616FB00FF2CF0 /* AppDelegate.h */,
 				BFE6CF3916D616FB00FF2CF0 /* AppDelegate.m */,
 				BFE6CF4116D616FB00FF2CF0 /* ViewController.h */,
@@ -118,15 +128,6 @@
 				BFE6CF3F16D616FB00FF2CF0 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		BFE6CF4C16D6170000FF2CF0 /* BTProgressView */ = {
-			isa = PBXGroup;
-			children = (
-				BFE6CF4D16D6172A00FF2CF0 /* BTProgressView.h */,
-				BFE6CF4E16D6172A00FF2CF0 /* BTProgressView.m */,
-			);
-			name = BTProgressView;
 			sourceTree = "<group>";
 		};
 		BFE6CF5016D61C1900FF2CF0 /* images */ = {
@@ -213,7 +214,7 @@
 				BFE6CF3616D616FA00FF2CF0 /* main.m in Sources */,
 				BFE6CF3A16D616FB00FF2CF0 /* AppDelegate.m in Sources */,
 				BFE6CF4316D616FB00FF2CF0 /* ViewController.m in Sources */,
-				BFE6CF4F16D6172A00FF2CF0 /* BTProgressView.m in Sources */,
+				BFA616B417D077CB004EF888 /* BTProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
