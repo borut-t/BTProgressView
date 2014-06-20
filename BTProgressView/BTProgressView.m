@@ -1,7 +1,7 @@
 //
 //  BTProgressView.m
 //
-//  Version 1.0.0
+//  Version 1.1
 //
 //  Created by Borut Tomazin on 2/21/2013.
 //  Copyright 2013 Borut Tomazin
@@ -34,32 +34,60 @@
 
 @implementation BTProgressView
 
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        _progress = 0.f;
+    }
+    return self;
+}
+
 - (void)drawRect:(CGRect)rect
 {
-    // Set background image
-    UIImage *background = [UIImage imageNamed:self.bgImage];
-    
-    // Set fill image
-    UIImage *fill = [UIImage imageNamed:self.fillImage];
-    
-    // Draw the background in the current rect
-    [background drawInRect:rect];
-    
-    // Compute the width for the current progress value
-    NSInteger curWidth = floor([self progress] * rect.size.width);
-    
-    // Draw the fill
-    [fill drawInRect:CGRectMake(rect.origin.x, rect.origin.y, curWidth, rect.size.height)];
-    
-    // Draw progress handle
     CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextMoveToPoint(context, curWidth-rect.size.height, 0.f);
-    CGContextAddLineToPoint(context, curWidth, 0.f);
-    CGContextAddLineToPoint(context, curWidth, rect.size.height);
-    CGContextAddLineToPoint(context, curWidth-rect.size.height, rect.size.height);
-    CGContextAddLineToPoint(context, curWidth-rect.size.height, 0.f);
-    CGContextSetFillColorWithColor(context, self.handleColor.CGColor);
-    CGContextFillPath(context);
+    
+    //width for the current progress value 0% to 100%
+    NSInteger progressWidth = floor(_progress * rect.size.width);
+    
+    //draw progress image
+    if (_progressImage != nil) {
+        [_progressImage drawInRect:CGRectMake(rect.origin.x, rect.origin.y, progressWidth, rect.size.height)];
+    }
+    //fill progress tint color
+    else if (_progressTintColor != nil) {
+        CGContextSetFillColorWithColor(context, _progressTintColor.CGColor);
+        CGContextFillRect(context, CGRectMake(rect.origin.x, rect.origin.y, progressWidth, rect.size.height));
+    }
+    
+    //draw track image
+    if (_trackImage != nil) {
+        [_trackImage drawInRect:CGRectMake(progressWidth, rect.origin.y, rect.size.width-progressWidth, rect.size.height)];
+    }
+    
+    // Draw progress handle if color defined
+    if (_progressHandleColor != nil) {
+        CGContextMoveToPoint(context, progressWidth-2.f, 0.f);
+        CGContextAddLineToPoint(context, progressWidth, 0.f);
+        CGContextAddLineToPoint(context, progressWidth, rect.size.height);
+        CGContextAddLineToPoint(context, progressWidth-2.f, rect.size.height);
+        CGContextAddLineToPoint(context, progressWidth-2.f, 0.f);
+        CGContextSetFillColorWithColor(context, self.progressHandleColor.CGColor);
+        CGContextFillPath(context);
+    }
+}
+
+- (void)setProgress:(CGFloat)progress
+{
+    _progress = progress;
+    [self setNeedsDisplay];
+}
+
+//fill track tint color
+- (void)setTrackTintColor:(UIColor *)trackTintColor
+{
+    _trackTintColor = trackTintColor;
+    self.backgroundColor = _trackTintColor;
 }
 
 @end

@@ -1,7 +1,7 @@
 //
 //  BTProgressView.h
 //
-//  Version 1.0.0
+//  Version 1.1
 //
 //  Created by Borut Tomazin on 2/21/2013.
 //  Copyright 2013 Borut Tomazin
@@ -32,19 +32,36 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BTButton : UIButton
+@interface BTProgressView : UIView
 
-@property (nonatomic, assign) CGFloat cornerRadius;
-@property (nonatomic, strong) UIColor *backgroundColor;
-@property (nonatomic, strong) UIColor *backgroundColorHighlighted;
+/**
+ The current progress.
+ */
+@property (nonatomic, assign) CGFloat progress;
 
-@end
+/**
+ The color shown for the portion of the progress bar that is filled.
+ */
+@property (nonatomic, strong) UIColor *progressTintColor;
 
+/**
+ An image to use for the portion of the progress bar that is filled.
+ */
+@property (nonatomic, strong) UIImage *progressImage;
 
-@interface BTProgressView : UIProgressView
+/**
+ Progress handle view. If color is not defined, handle is not drawn.
+ */
+@property (nonatomic, strong) UIColor *progressHandleColor;
 
-@property (nonatomic, strong) NSString *bgImage;
-@property (nonatomic, strong) NSString *fillImage;
-@property (nonatomic, strong) UIColor *handleColor;
+/**
+ The color shown for the portion of the progress bar that is not filled.
+ */
+@property (nonatomic, strong) UIColor *trackTintColor;
+
+/**
+ An image to use for the portion of the track that is not filled.
+ */
+@property (nonatomic, strong) UIImage *trackImage;
 
 @end

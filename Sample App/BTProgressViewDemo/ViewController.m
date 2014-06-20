@@ -24,9 +24,9 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     self.myProgressView.progress = 0.1f;
-    self.myProgressView.bgImage = @"bgimage_grey.png";
-    self.myProgressView.fillImage = @"fillimage_blue.png";
-    self.myProgressView.handleColor = [UIColor redColor];
+    self.myProgressView.trackImage = [UIImage imageNamed:@"bgimage_grey.png"];
+    self.myProgressView.progressImage = [UIImage imageNamed:@"fillimage_blue.png"];
+    self.myProgressView.progressHandleColor = [UIColor blackColor];
     [self.view addSubview:self.myProgressView];
 }
 
