@@ -27,6 +27,7 @@
     self.myProgressView.trackImage = [UIImage imageNamed:@"bgimage_grey.png"];
     self.myProgressView.progressImage = [UIImage imageNamed:@"fillimage_blue.png"];
     self.myProgressView.progressHandleColor = [UIColor blackColor];
+    //self.myProgressView.isRightToLeft = YES;
     [self.view addSubview:self.myProgressView];
 }
 

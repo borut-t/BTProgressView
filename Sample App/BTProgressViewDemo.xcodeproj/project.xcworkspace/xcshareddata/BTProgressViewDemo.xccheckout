@@ -10,29 +10,29 @@
 	<string>BTProgressViewDemo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>4F649AE0-078B-4B97-A770-7CE8C5164535</key>
+		<key>A1968888D6280FB34A9DF23FA0C8924C4CBAE3AA</key>
 		<string>https://github.com/borut-t/BTProgressView.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Sample App/BTProgressViewDemo.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>4F649AE0-078B-4B97-A770-7CE8C5164535</key>
+		<key>A1968888D6280FB34A9DF23FA0C8924C4CBAE3AA</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/borut-t/BTProgressView.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>4F649AE0-078B-4B97-A770-7CE8C5164535</string>
+	<string>A1968888D6280FB34A9DF23FA0C8924C4CBAE3AA</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>4F649AE0-078B-4B97-A770-7CE8C5164535</string>
+			<string>A1968888D6280FB34A9DF23FA0C8924C4CBAE3AA</string>
 			<key>IDESourceControlWCCName</key>
 			<string>BTProgressView</string>
 		</dict>

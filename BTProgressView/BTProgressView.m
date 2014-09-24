@@ -1,7 +1,7 @@
 //
 //  BTProgressView.m
 //
-//  Version 1.1
+//  Version 1.2
 //
 //  Created by Borut Tomazin on 2/21/2013.
 //  Copyright 2013 Borut Tomazin
@@ -39,6 +39,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         _progress = 0.f;
+        _isRightToLeft = NO;
     }
     return self;
 }
@@ -52,26 +53,42 @@
     
     //draw progress image
     if (_progressImage != nil) {
-        [_progressImage drawInRect:CGRectMake(rect.origin.x, rect.origin.y, progressWidth, rect.size.height)];
+        if (_isRightToLeft) {
+            [_progressImage drawInRect:CGRectMake(rect.size.width-progressWidth, rect.origin.y, progressWidth, rect.size.height)];
+        }
+        else {
+            [_progressImage drawInRect:CGRectMake(rect.origin.x, rect.origin.y, progressWidth, rect.size.height)];
+        }
     }
     //fill progress tint color
     else if (_progressTintColor != nil) {
         CGContextSetFillColorWithColor(context, _progressTintColor.CGColor);
-        CGContextFillRect(context, CGRectMake(rect.origin.x, rect.origin.y, progressWidth, rect.size.height));
+        if (_isRightToLeft) {
+            CGContextFillRect(context, CGRectMake(rect.size.width-progressWidth, rect.origin.y, progressWidth, rect.size.height));
+        }
+        else {
+            CGContextFillRect(context, CGRectMake(rect.origin.x, rect.origin.y, progressWidth, rect.size.height));
+        }
     }
     
     //draw track image
     if (_trackImage != nil) {
-        [_trackImage drawInRect:CGRectMake(progressWidth, rect.origin.y, rect.size.width-progressWidth, rect.size.height)];
+        if (_isRightToLeft) {
+            [_trackImage drawInRect:CGRectMake(rect.origin.y, rect.origin.y, rect.size.width-progressWidth, rect.size.height)];
+        }
+        else {
+            [_trackImage drawInRect:CGRectMake(progressWidth, rect.origin.y, rect.size.width-progressWidth, rect.size.height)];
+        }
     }
     
     // Draw progress handle if color defined
     if (_progressHandleColor != nil) {
-        CGContextMoveToPoint(context, progressWidth-2.f, 0.f);
-        CGContextAddLineToPoint(context, progressWidth, 0.f);
-        CGContextAddLineToPoint(context, progressWidth, rect.size.height);
-        CGContextAddLineToPoint(context, progressWidth-2.f, rect.size.height);
-        CGContextAddLineToPoint(context, progressWidth-2.f, 0.f);
+        CGFloat handlePosition = _isRightToLeft ? rect.size.width-progressWidth : progressWidth;
+        CGContextMoveToPoint(context, handlePosition-1.f, 0.f);
+        CGContextAddLineToPoint(context, handlePosition+1, 0.f);
+        CGContextAddLineToPoint(context, handlePosition+1, rect.size.height);
+        CGContextAddLineToPoint(context, handlePosition-1.f, rect.size.height);
+        CGContextClosePath(context);
         CGContextSetFillColorWithColor(context, self.progressHandleColor.CGColor);
         CGContextFillPath(context);
     }

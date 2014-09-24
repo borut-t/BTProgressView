@@ -15,14 +15,30 @@ Properties
 
 The BTProgressView has the following properties:
 
-	@property (nonatomic, strong) NSString *bgImage;
+    @property (nonatomic, assign) CGFloat progress;
 
-Path to local image that is presented as a progress track background.
+The current progress.
 
-	@property (nonatomic, strong) NSString *fillImage;
+    @property (nonatomic, strong) UIColor *progressTintColor;
 
-Path to local image that is presented as a progress track fill.
+The color shown for the portion of the progress bar that is filled.
 
-	@property (nonatomic, strong) UIColor *handleColor;
+    @property (nonatomic, strong) UIImage *progressImage;
 
-Color for progress handle.
+An image to use for the portion of the progress bar that is filled.
+
+    @property (nonatomic, strong) UIColor *progressHandleColor;
+
+Progress handle view. If color is not defined, handle is not drawn.
+
+    @property (nonatomic, strong) UIColor *trackTintColor;
+
+The color shown for the portion of the progress bar that is not filled.
+
+    @property (nonatomic, strong) UIImage *trackImage;
+
+An image to use for the portion of the track that is not filled.
+
+    @property (nonatomic, assign) BOOL isRightToLeft;
+
+If YES progress goes from right-to-left, otherwise from left-to-right. Default to NO.

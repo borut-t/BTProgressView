@@ -1,7 +1,7 @@
 //
 //  BTProgressView.h
 //
-//  Version 1.1
+//  Version 1.2
 //
 //  Created by Borut Tomazin on 2/21/2013.
 //  Copyright 2013 Borut Tomazin
@@ -34,34 +34,25 @@
 
 @interface BTProgressView : UIView
 
-/**
- The current progress.
- */
+/** The current progress. */
 @property (nonatomic, assign) CGFloat progress;
 
-/**
- The color shown for the portion of the progress bar that is filled.
- */
+/** The color shown for the portion of the progress bar that is filled. */
 @property (nonatomic, strong) UIColor *progressTintColor;
 
-/**
- An image to use for the portion of the progress bar that is filled.
- */
+/** An image to use for the portion of the progress bar that is filled. */
 @property (nonatomic, strong) UIImage *progressImage;
 
-/**
- Progress handle view. If color is not defined, handle is not drawn.
- */
+/** Progress handle view. If color is not defined, handle is not drawn. */
 @property (nonatomic, strong) UIColor *progressHandleColor;
 
-/**
- The color shown for the portion of the progress bar that is not filled.
- */
+/** The color shown for the portion of the progress bar that is not filled. */
 @property (nonatomic, strong) UIColor *trackTintColor;
 
-/**
- An image to use for the portion of the track that is not filled.
- */
+/** An image to use for the portion of the track that is not filled. */
 @property (nonatomic, strong) UIImage *trackImage;
+
+/** If YES progress goes from right-to-left, otherwise from left-to-right. Default to NO. */
+@property (nonatomic, assign) BOOL isRightToLeft;
 
 @end
